@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (2ed6d7ae0b, 2022-08-22, custom)"
+   sodipodi:docname="logo"
+   inkscape:export-filename="../e95c8be/logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.99276681"
+     inkscape:cx="242.7559"
+     inkscape:cy="455.79687"
+     inkscape:window-width="1854"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:30.7434px;fill:#ffffff;stroke-width:2.56195;fill-opacity:0.99314141"
+       x="27.921417"
+       y="135.44067"
+       id="text113"><tspan
+         sodipodi:role="line"
+         id="tspan111"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:michael;-inkscape-font-specification:michael;stroke-width:2.56195;fill:#ffffff;fill-opacity:0.99314141"
+         x="27.921417"
+         y="135.44067">Stro</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30.7434px;fill:#ffffff;stroke-width:2.56195;fill-opacity:0.99314141"
+       x="127.14994"
+       y="135.38136"
+       id="text113-7"><tspan
+         sodipodi:role="line"
+         id="tspan111-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:michael;-inkscape-font-specification:michael;stroke-width:2.56195;fill:#ffffff;fill-opacity:0.99314141"
+         x="127.14994"
+         y="135.38136">pl.io</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:0.99314141;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       d="m 108.85151,120.03504 h 2.90324 c 1.12722,0 2.31781,0.0887 2.33918,1.73656 3.32415,-2.87741 10.60689,-5.02725 10.58744,6.11916 -0.017,9.7544 -8.02314,9.02645 -10.5798,7.04025 v 7.45111 c 0,1.26055 -0.7923,1.68172 -2.06211,1.68172 h -3.13881 V 128.047 l 2.75132,-2.18578 c 0.9275,-0.73685 2.40248,-0.7008 2.40248,0.86377 v 7.23827 c 4.60179,1.21489 5.2272,-2.99406 5.20635,-6.23694 -0.0179,-2.7769 -0.74017,-8.55436 -5.46823,-4.70642 -4.84723,3.94493 -8.41715,7.56362 -14.291138,11.43924 -2.948107,1.94514 -8.47247,2.99762 -8.463949,-3.05396 l 0.01601,-11.36986 2.643386,-0.001 c 1.526262,-5.8e-4 2.531494,0.25824 2.531494,2.05512 v 8.97272 c 0,3.13579 2.238974,3.28667 4.219827,1.76682 l -0.005,-12.74322 3.14515,-0.0366 c 1.80898,-0.0211 2.10187,0.82369 2.10187,1.97672 v 6.76577 l 3.17966,-2.60944 z"
+       id="path1046"
+       sodipodi:nodetypes="cscscssccsscsssscsssccssccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.99314141;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       d="m 105.65719,130.75445 v 4.63154 h -3.03238 c -1.16459,0 -1.22385,-1.33313 -0.4239,-1.95306 z"
+       id="path2755"
+       sodipodi:nodetypes="ccssc" />
+  </g>
+</svg>

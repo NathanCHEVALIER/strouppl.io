@@ -8,8 +8,9 @@
     <meta name="theme-color" content="#09025f" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Stroupl.io</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="icon" type="/image/png" href="/img/favicon.png" />
     <link rel="stylesheet" href="/src/css/style.css" />
 </head>
@@ -19,9 +20,18 @@
     </header>
 
     <section id="connect">
+        <h2>
+        <?php
+        if (isset($count) && $count == 1) {
+            echo "Hello " . $data["username"];    
+        }
+        else {
+            echo 'Connection';
+        } ?>
+        </h2>
         <form method="post" action="index.php">
-            <label for="email" value="Votre adresse mail" >Votre adresse mail</label>
-            <input type="text" name="email" />
+            <label for="username" value="Votre adresse mail" >Votre adresse mail</label>
+            <input type="text" name="username" />
             <label for="password" value="" >Votre mot de passe</label>
             <input type="password" name="password" />
 

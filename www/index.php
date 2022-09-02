@@ -1,9 +1,7 @@
 <?php
 
-echo 'Hello World! <br />';
-
-$username = "' OR true; --";
-$password = 'admin';
+$username = "";
+$password = "";
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
@@ -16,10 +14,9 @@ $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $req = $bdd->prepare("SELECT * FROM users WHERE username = '" . $username . "' AND password = '" . $password . "'");
 $req->execute();
 
-while($data = $req->fetch()){
-    echo $data['username'] . ' - ' . $data['password'] . ' : ' . $data['email'] . '<br />';
-}
+$data = $req->fetch();
+$count = $req->rowCount();
 
-//echo phpinfo();
+include_once('src/home.php');
 
 ?>

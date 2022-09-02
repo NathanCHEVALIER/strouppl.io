@@ -30,7 +30,7 @@
         } ?>
         </h2>
         <form method="post" action="index.php">
-            <label for="username" value="Votre adresse mail" >Votre adresse mail</label>
+            <label for="username" value="Votre nom d'utilisateur" >Votre nom d'utilisateur</label>
             <input type="text" name="username" />
             <label for="password" value="" >Votre mot de passe</label>
             <input type="password" name="password" />

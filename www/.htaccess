@@ -1,0 +1,5 @@
+DirectoryIndex src/index.php
+
+RewriteEngine On
+
+RewriteRule ^user\/password[\/]?$ src/change_password.php

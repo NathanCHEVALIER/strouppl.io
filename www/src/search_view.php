@@ -1,11 +1,11 @@
 <?php
 include_once('header.php');
 ?>
-    <section id="connect">
+    <section id="search">
         <h2>
         <?php
         if (isset($count) && $count == 0) {
-            echo "Any results for: " . $search;    
+            echo "Any results for: '" . $search . "'";    
         }
         elseif (isset($count)) {
             echo $count . ' results for: ' . $search;

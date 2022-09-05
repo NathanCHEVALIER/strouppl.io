@@ -17,7 +17,7 @@
 <body class="">
     <header>
         <img src="/src/img/logo.png" alt="" />
-        <form method="get" action="search.php">
+        <form method="get" action="/search">
             <input type="text" name="search" />
             <input type="submit" value="Search" class="button"/>
         </form>

@@ -8,17 +8,27 @@
     <meta name="theme-color" content="#09025f" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Strouppl.io</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="icon" type="/image/png" href="/img/favicon.png" />
     <link rel="stylesheet" href="/src/css/style.css" />
 </head>
 <body class="">
     <header>
         <img src="/src/img/logo.png" alt="" />
-        <form method="get" action="/search" id="search">
-            <input type="text" placeholder="Search..." name="search" />
-            <input type="submit" value="Search" class="button"/>
-        </form>
+        <div>
+            <form method="get" action="/search" id="search">
+                <input type="text" placeholder="Search..." name="search" />
+                <input type="submit" value="" />
+            </form>
+            <?php 
+            if (isset($_SESSION['isConnected'])) {
+                echo '<div id="profileBtn"></div>';
+            }
+            ?>
+        </div>
     </header>
+    <?php
+    if (isset($_SESSION['isConnected'])) {
+        echo '<div id="menu" class="hidden"><a href="/user">Mon Profil</a><a href="/user/password">Changer mon mot de passe</a><a href="/user/disconnect">Se déconnecter</a></div>';
+    }
+    ?>

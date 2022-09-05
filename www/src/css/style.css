@@ -38,9 +38,6 @@ section {
 
 section#connect {
     background-color: #ffffff;
-    width: 30vw;
-    min-width: 400px;
-    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,17 +49,38 @@ section#connect {
     transform: translateX(-50%);
     padding: 60px 0px;
 }
+
+section#connect {
+    width: 30vw;
+    min-width: 400px;
+    max-width: 700px;
+}
+
+section#search {
+    width: 80%;
+}
+
 section > h2 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
     font-weight: 700;
     color: #09025f;
 }
+
 section#connect > form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+div#article {
+    margin: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form#search > input[type=text] {
+    background-color: white;
 }
 
 input {

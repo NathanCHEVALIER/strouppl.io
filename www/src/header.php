@@ -17,8 +17,8 @@
 <body class="">
     <header>
         <img src="/src/img/logo.png" alt="" />
-        <form method="get" action="/search">
-            <input type="text" name="search" />
+        <form method="get" action="/search" id="search">
+            <input type="text" placeholder="Search..." name="search" />
             <input type="submit" value="Search" class="button"/>
         </form>
     </header>

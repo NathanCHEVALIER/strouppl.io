@@ -8,7 +8,7 @@ include_once('header.php');
             echo "Any results for: '" . $search . "'";    
         }
         elseif (isset($count)) {
-            echo $count . ' results for: ' . $search;
+            echo $count . " results for: '" . $search . "'";
         } 
         else {
             echo "An error occured";
@@ -17,7 +17,7 @@ include_once('header.php');
         <?php
         if (isset($count)) {
             for ($i = 0; $i < $count; $i++) {
-                echo '<div>' . $data[$i]["title"] . "\n" . $data[$i]["content"] . "</div>";
+                echo '<div id="article"><h3>' . $data[$i]["title"] . "</h3><br>" . $data[$i]["content"] . "</div>";
             }
         } 
         ?>

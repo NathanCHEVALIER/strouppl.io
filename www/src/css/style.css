@@ -50,11 +50,21 @@ section > h2 {
     font-weight: 700;
     color: #09025f;
 }
+
 section#connect > form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+div#article {
+    margin: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form#search > input[type=text] {
+    background-color: white;
 }
 
 input {

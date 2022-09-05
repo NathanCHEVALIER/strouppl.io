@@ -13,5 +13,5 @@ docker-compose up --build
 
 ## Authors
 
-Nathan CHEVALIER
-Alan GUERET
+- Nathan CHEVALIER
+- Alan GUERET

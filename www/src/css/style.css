@@ -5,84 +5,6 @@
 body {
     background-color: #f7f7f7;
 }
-
-header {
-    background-color: #09025f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 74px;
-    padding: 14px;
-    box-shadow: #00000050 0 2px 8px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
-    width: 100vw;
-}
-header > img {
-    height: 58px;
-    margin-top: 6px;
-    margin-left: 48px;
-    width: auto;
-}
-header > form {
-    margin-right: 60px;;
-}
-
-section {
-    position: absolute;
-    top: 102px;
-    left: 0px;
-}
-
-section#connect {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #00000026 0 2px 8px;
-    border-radius: 3px;
-    margin-top: 120px;
-    margin-left: 50vw;
-    transform: translateX(-50%);
-    padding: 60px 0px;
-}
-
-section#connect {
-    width: 30vw;
-    min-width: 400px;
-    max-width: 700px;
-}
-
-section#search {
-    width: 80%;
-}
-
-section > h2 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: #09025f;
-}
-
-section#connect > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div#article {
-    margin: 2vw;
-    font-family: 'Montserrat', sans-serif;
-}
-
-form#search > input[type=text] {
-    background-color: white;
-}
-
 input {
     border: 2px solid #dfdfdf;
     background-color: transparent;
@@ -112,6 +34,110 @@ label {
 .button:hover {
     background-color: #09025f;
 }
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #09025f;
+}
+
+header {
+    background-color: #0b017b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    padding: 14px;
+    box-shadow: #00000050 0 2px 8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100vw;
+}
+header > img {
+    height: 58px;
+    margin-top: 6px;
+    margin-left: 48px;
+    width: auto;
+}
+header > div {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+header form#search {
+    display: flex;
+    align-items: center;
+}
+header form#search > input[type=text] {
+    background-color: #dfdcff26;
+    border: 0px solid transparent !important;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+header form#search > input[type=submit] {
+    position: relative;
+    left: -41px;
+    width: 30px;
+    height: 30px;
+    background-image: url('/src/img/icons8-search.png');
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    background-position: center center;
+    border: 0px solid transparent;
+    margin-bottom: 0px;
+}
+header > div > div {
+    width: 46px;
+    height: 46px;
+    border-radius: 30px;
+    background-image: url('/src/img/icons8-user.png');
+    background-repeat: no-repeat;
+    background-size: 46px auto;
+    background-position: center center;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+section {
+    position: absolute;
+    top: 102px;
+    left: 0px;
+}
+section#connect {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #00000026 0 2px 8px;
+    border-radius: 3px;
+    margin-top: 120px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    padding: 60px 0px;
+}
+section#connect {
+    width: 30vw;
+    min-width: 400px;
+    max-width: 700px;
+}
+section#connect > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#search {
+    width: 80%;
+}
+div#article {
+    margin: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
 
 section#dashboard {
     width: 100vw;
@@ -129,4 +155,33 @@ section#dashboard > h2 {
     top: calc(20px + 2.4vw);
     font-size: 1.4vw;
     left: 3.6vw;
+}
+
+#menu {
+    position: fixed;
+    top: 102px;
+    right: 40px;
+    z-index: 1000;
+    background-color: #ffffff;
+    padding: 24px 0px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #00000026 0 2px 8px;
+}
+#menu.hidden {
+    display: none;
+}
+#menu > a {
+    height: 40px;
+    width: 240px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 6px 40px;
+    text-align: left;
+    color: #777777;
+}
+#menu > a:hover {
+    background-color: #efefef;
 }

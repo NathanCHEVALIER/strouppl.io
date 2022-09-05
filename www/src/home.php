@@ -12,7 +12,7 @@ include_once('header.php');
             echo 'Connection';
         } ?>
         </h2>
-        <form method="post" action="index.php">
+        <form method="post" action="/user/connect">
             <label for="username" value="Votre nom d'utilisateur" >Votre nom d'utilisateur</label>
             <input type="text" name="username" />
             <label for="password" value="" >Votre mot de passe</label>

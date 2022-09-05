@@ -17,6 +17,6 @@ $req->execute();
 $data = $req->fetch();
 $count = $req->rowCount();
 
-include_once('src/home.php');
+include_once('home.php');
 
 ?>

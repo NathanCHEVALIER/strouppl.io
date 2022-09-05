@@ -3,3 +3,5 @@ DirectoryIndex src/index.php
 RewriteEngine On
 
 RewriteRule ^user\/password[\/]?$ src/change_password.php
+RewriteRule ^user\/connect[\/]?$ src/index.php
+RewriteRule ^search[\/]?$ src/search.php

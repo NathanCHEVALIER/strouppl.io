@@ -1,6 +1,11 @@
 <?php
+session_start();
 
-if (isset($_POST['username']) && isset($_POST['password'])) {
+if ($_SESSION['isConnected'] && !isset($_GET["action"]) || (isset($_GET["action"]) && htmlspecialchars($_GET["action"]) !== "disconnect")) {
+    header('Location: /dashboard/');
+    exit();
+}
+else if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -14,25 +19,26 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $count = $req->rowCount();
 
     if (isset($count) && $count == 1) {
-        session_start();
         $_SESSION['isConnected'] = true;
         $_SESSION['username'] = $data['username'];
-        include_once('dashboard.view.php');
+        sleep(1);
+        header('Location: /dashboard/');
+        exit();
     }
     else {
         session_destroy();
         include_once('home.view.php');
     }
 }
-else if (isset($_GET["action"]) && htmlspecialchars($_GET["action"]) === "disconnect" ) {
+else if (isset($_GET["action"]) && htmlspecialchars($_GET["action"]) === "disconnect") {
     session_destroy();
     include_once('home.view.php');
 }
 else {
-    session_destroy();
+    if (isset($_SESSION['username'])) {
+        session_destroy();
+    }
     include_once('home.view.php');
 }
-
-
 
 ?>

@@ -17,7 +17,7 @@ include_once('header.php');
         <?php
         if (isset($count)) {
             for ($i = 0; $i < $count; $i++) {
-                echo '<div id="article"><h3>' . $data[$i]["title"] . "</h3><br>" . $data[$i]["content"] . "</div>";
+                echo '<div id="article"><h3>' . $data[$i]["title"] . " - " . $data[$i]["author"] . "</h3><br>" . $data[$i]["content"] . "</div>";
             }
         } 
         ?>

@@ -21,7 +21,6 @@ else if (isset($_POST['username']) && isset($_POST['password'])) {
     if (isset($count) && $count == 1) {
         $_SESSION['isConnected'] = true;
         $_SESSION['username'] = $data['username'];
-        sleep(1);
         header('Location: /dashboard/');
         exit();
     }

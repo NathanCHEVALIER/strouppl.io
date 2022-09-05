@@ -2,10 +2,9 @@ DirectoryIndex src/index.php
 
 RewriteEngine On
 
-RewriteRule ^user\/password[\/]?$ src/change_password.php
+RewriteRule ^user\/password[\/]?$ src/password.view.php
 RewriteRule ^user\/connect[\/]?$ src/index.php
 RewriteRule ^user\/disconnect[\/]?$ src/index.php?action=disconnect
 RewriteRule ^user[\/]?$ src/profile.view.php
-RewriteRule ^user\/password[\/]?$ src/password.view.php
 RewriteRule ^search[\/]?$ src/search.php
 RewriteRule ^dashboard[\/]?$ src/dashboard.view.php

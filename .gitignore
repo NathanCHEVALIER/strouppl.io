@@ -13,7 +13,6 @@ www/#ib_16384_0.dblwr
 www/#ib_16384_1.dblwr
 www/ib_buffer_pool
 www/ibdata1
-index.php
 www/#innodb_redo
 www/#innodb_temp
 www/myDb
@@ -25,7 +24,6 @@ www/private_key.pem
 www/public_key.pem
 www/server-cert.pem
 www/server-key.pem
-src
 www/sys
 www/undo_001
 www/undo_002

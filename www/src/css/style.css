@@ -11,16 +11,32 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 84px;
-    padding: 20px;
-    box-shadow: #00000026 0 2px 8px;
+    height: 74px;
+    padding: 14px;
+    box-shadow: #00000050 0 2px 8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100vw;
 }
 header > img {
-    height: 80px;
+    height: 58px;
+    margin-top: 6px;
+    margin-left: 48px;
     width: auto;
+}
+header > form {
+    margin-right: 60px;;
 }
 
 section {
+    position: absolute;
+    top: 102px;
+    left: 0px;
+}
+
+section#connect {
     background-color: #ffffff;
     width: 30vw;
     min-width: 400px;
@@ -77,4 +93,22 @@ label {
 }
 .button:hover {
     background-color: #09025f;
+}
+
+section#dashboard {
+    width: 100vw;
+    height: auto;
+    background-color: #f1f4fa;
+}
+section#dashboard > img{
+    width: 98vw;
+    height: auto;
+    margin-left: 1vw;
+    margin-top: 20px;
+}
+section#dashboard > h2 {
+    position: absolute;
+    top: calc(20px + 2.4vw);
+    font-size: 1.4vw;
+    left: 3.6vw;
 }

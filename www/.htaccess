@@ -5,3 +5,5 @@ RewriteEngine On
 RewriteRule ^user\/password[\/]?$ src/change_password.php
 RewriteRule ^user\/connect[\/]?$ src/index.php
 RewriteRule ^search[\/]?$ src/search.php
+
+RewriteRule ^dashboard[\/]?$ src/dashboard.view.php

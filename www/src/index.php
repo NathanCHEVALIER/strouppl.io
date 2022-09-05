@@ -17,6 +17,11 @@ $req->execute();
 $data = $req->fetch();
 $count = $req->rowCount();
 
-include_once('home.php');
+if (isset($count) && $count == 1) {
+    include_once('dashboard.view.php');
+}
+else {
+    include_once('home.view.php');
+}
 
 ?>
